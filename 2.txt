@@ -1,1 +1,8 @@
-test
+
+#######################Help Function #################
+
+case $(hostname) in
+           "nyxatappmon01") host="INT" ;;
+		   "njappmon01") host="NJPROD" ;;
+		   *) echo "Try Running from nyxatappmon01|njappmon01" ;;
+esac
